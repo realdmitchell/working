@@ -1,0 +1,226 @@
+ wget https://download.kde.org/stable/4.14.3/src/kdepim-4.14.3.tar.xz
+ tar xvf kdepim-4.14.3.tar.xz 
+ cd kdepim-4.14.3/
+ ls
+ mkdir build
+ cd build/
+ cmake ../
+ cd ..
+ wget https://download.kde.org/stable/4.14.3/src/kde-baseapps-4.14.3a.tar.xz
+ tar xvf kde-baseapps-4.14.3a.tar.xz 
+ cd kde-baseapps-4.14.3/
+ mkdir build
+ cd build/
+ cmake ..
+ cd ..
+ wget http://archive.ubuntu.com/ubuntu/pool/universe/k/kde4libs/kde4libs_4.14.22.orig.tar.xz
+ tar xvf kde4libs_4.14.22.orig.tar.xz 
+ cd kdelibs-4.14.22/
+ ls
+ mkdir build
+ cd build/
+ cmake
+ cmake ../
+ cd ..
+ rm kdelibs-4.14.22 -fr
+ wget http://archive.ubuntu.com/ubuntu/pool/main/k/kde4libs/kde4libs_4.13.3.orig.tar.xz
+ tar xvf kde4libs_4.13.3.orig.tar.xz 
+ wget 
+ wget http://archive.ubuntu.com/ubuntu/pool/main/p/phonon/phonon_4.7.1-0ubuntu8.debian.tar.gz
+ tar xvf phonon_4.7.1-0ubuntu8.debian.tar.gz 
+ ls
+ rm debian -fr
+ rm phonon_4.7.1-0ubuntu8.debian.tar.gz 
+ wget http://archive.ubuntu.com/ubuntu/pool/main/p/phonon/phonon_4.7.80.orig.tar.xz
+ tar xvf phonon_4.7.80.orig.tar.xz 
+ cd phonon-4.7.80/
+ mkdir build
+ cd build/
+ cmake ..
+ make
+ cmake  -DCMAKE_INSTALL_PREFIX=/othersoft/local/kde ../
+ make
+ make install
+ cd ..
+ lt
+ cd ..
+ wget http://archive.ubuntu.com/ubuntu/pool/main/a/automoc/automoc_1.0~version-0.9.88.orig.tar.gz
+ tar xvf automoc_1.0~version-0.9.88.orig.tar.gz 
+ cd automoc-1.0~version-0.9.88/
+ mkdir build
+ cd build/
+ cmake  -DCMAKE_INSTALL_PREFIX=/othersoft/local/kde ../
+ make
+ make install 
+ cd ..
+ wget http://archive.ubuntu.com/ubuntu/pool/main/a/attica/attica_0.4.2.orig.tar.bz2
+ tar xvf attica_0.4.2.orig.tar.bz2 
+ cd attica-0.4.2/
+ mkdir build
+ cd build/
+ cmake  -DCMAKE_INSTALL_PREFIX=/othersoft/local/kde ../
+ make install
+ cd ..
+ wget http://archive.ubuntu.com/ubuntu/pool/main/p/polkit-qt-1/polkit-qt-1_0.103.0.orig.tar.bz2
+ tar xvf polkit-qt-1_0.103.0.orig.tar.bz2 
+ cd polkit-qt-1-0.103.0/
+ mkdir build
+ cd build/
+ cmake  -DCMAKE_INSTALL_PREFIX=/othersoft/local/kde ../
+ make install 
+ ls /othersoft/local/kde/bin/
+ echo $PATH
+ export PATH="$PATH:/othersoft/local/kde/bin"
+ echo $PA
+ echo $PATH 
+ cd ..
+ wget http://archive.ubuntu.com/ubuntu/pool/main/k/kde4libs/kde4libs_4.13.3.orig.tar.xz
+ export CMAKE_PREFIX_PATH=/othersoft/local/kde
+ tar xvf kde4libs_4.13.3.orig.tar.xz 
+ cd kdelibs-4.13.3/
+ mkdir build
+ cd build/
+ cmake  -DCMAKE_INSTALL_PREFIX=/othersoft/local/kde ../
+ cd ..
+ wget http://archive.ubuntu.com/ubuntu/pool/main/s/strigi/strigi_0.7.8.orig.tar.bz2
+ tar xvf strigi_0.7.8.orig.tar.bz2 
+ cd strigi-0.7.8/
+ mkdir build
+ cd build/
+ cmake  -DCMAKE_INSTALL_PREFIX=/othersoft/local/kde ../
+ cd ..
+ wget http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.6.orig.tar.bz2
+ tar xvf bzip2_1.0.6.orig.tar.bz2 
+ cd bzip2-1.0.6/
+ ls
+ vi README
+ make install PREFIX=/othersoft/local/kde
+ cd ..
+ cd strigi-0.7.8/
+ cd build/
+ cmake  -DCMAKE_INSTALL_PREFIX=/othersoft/local/kde ../
+ cd ..
+ wget http://archive.ubuntu.com/ubuntu/pool/main/e/exiv2/exiv2_0.23.orig.tar.gz
+ tar xvf exiv2_0.23.orig.tar.gz 
+ cd exiv2-0.23/
+ ls
+ vi README 
+ ./configure --help
+ ./configure --prefix=/othersoft/local/kde
+ make install
+ cd ..
+ lt
+ cd strigi-0.7.8/
+ cd build/
+ cmake  -DCMAKE_INSTALL_PREFIX=/othersoft/local/kde ../
+ make install 
+ cd ..
+ lt
+ cd bzip2-1.0.6/
+ ls
+ vi README.COMPILATION.PROBLEMS 
+ vi READM
+ vi README
+ vi Makefile
+ make clean
+ make
+ history | grep make
+ make clean
+ vi README
+ make install PREFIX=/othersoft/local/kde
+ cd ..
+ lt
+ cd strigi-0.7.8/
+ cd build/
+ cmake  -DCMAKE_INSTALL_PREFIX=/othersoft/local/kde ../
+ make clean ; make install 
+ cd ..
+ lt
+ cd ..
+ lt
+ cd kdelibs-4.13.3
+ cd build/
+ cmake  -DCMAKE_INSTALL_PREFIX=/othersoft/local/kde ../
+ cd ..
+ wget http://archive.ubuntu.com/ubuntu/pool/main/g/giflib/giflib_4.1.6.orig.tar.gz
+ tar xvf giflib_4.1.6.orig.tar.gz 
+ cd giflib-4.1.6/
+ ls
+ ./configure --prefix=/othersoft/local/kde
+ make install
+ cd ..
+ lt
+ cd kdelibs-4.13.3
+ cd build/
+ cmake  -DCMAKE_INSTALL_PREFIX=/othersoft/local/kde ../
+ cd ..
+ wget http://archive.ubuntu.com/ubuntu/pool/main/a/acl/acl_2.2.52.orig.tar.bz2
+ tar xvf acl_2.2.52.orig.tar.bz2 
+ cd acl-2.2.52/
+ ./configure --prefix=/othersoft/local/kde
+ ./configure 
+ cd ..
+ cd kdelibs-4.13.3/
+ cd build/
+ cmake  -DCMAKE_INSTALL_PREFIX=/othersoft/local/kde ../
+ cmake  -DCMAKE_INSTALL_PREFIX=/othersoft/local/kde -DCMAKE_BUILD_TYPE=Release  ../
+ make
+ cmake  -DCMAKE_INSTALL_PREFIX=/othersoft/local/kde -DCMAKE_BUILD_TYPE=Release  ../
+ make clean ; make
+ make install 
+ cd ..
+ lt
+ cd ..
+ git clone git://github.com/taglib/taglib.git
+ cd taglib/
+ ls
+ cmake  -DCMAKE_INSTALL_PREFIX=/othersoft/local/kde -DCMAKE_BUILD_TYPE=Release  ../
+ mkdir buildc
+ mv buildc build
+ cd build/
+ cmake  -DCMAKE_INSTALL_PREFIX=/othersoft/local/kde -DCMAKE_BUILD_TYPE=Release  ../
+ cmake  -DCMAKE_INSTALL_PREFIX=/othersoft/local/kde -DCMAKE_BUILD_TYPE=Release  -DWITH_ASF=TRUE -DWITH_MP4=TRUE ../
+ make install
+ vi CMakeCache.txt 
+ cd ..
+ wget http://archive.ubuntu.com/ubuntu/pool/universe/k/kde-runtime/kde-runtime_4.13.3.orig.tar.xz
+ tar xvf kde-runtime_4.13.3.orig.tar.xz 
+ cd kde-runtime-4.13.3/
+ mkdir build
+ cd build/
+ cmake  -DCMAKE_INSTALL_PREFIX=/othersoft/local/kde -DCMAKE_BUILD_TYPE=Release   ../
+ cd ..
+ ls
+ cd ..
+ lt
+ wget http://archive.ubuntu.com/ubuntu/pool/main/k/kde4libs/kde4libs_4.13.3.orig.tar.xz
+ tar  xvf kde4libs_4.13.3.orig.tar.xz 
+ cd kdelibs-4.13.3/
+ lt
+ cd ..
+ lt
+ cd bu
+ cd -
+ cd build/
+ cmake  -DCMAKE_INSTALL_PREFIX=/othersoft/local/kde -DCMAKE_BUILD_TYPE=Release   ../
+ cd ..
+ lt
+ wget http://archive.ubuntu.com/ubuntu/pool/universe/n/nepomuk-core/nepomuk-core_4.13.3.orig.tar.xz
+ tar xvf nepomuk-core_4.13.3.orig.tar.xz 
+ cd nepomuk-core-4.13.3/
+ mkdir build
+ cmake  -DCMAKE_INSTALL_PREFIX=/othersoft/local/kde -DCMAKE_BUILD_TYPE=Release   ../
+ cd build/
+ cmake  -DCMAKE_INSTALL_PREFIX=/othersoft/local/kde -DCMAKE_BUILD_TYPE=Release   ../
+ cd ..
+ wget http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.24.5.orig.tar.xz
+ tar xvf poppler_0.24.5.orig.tar.xz 
+ cd poppler-0.24.5/
+ lt
+ ./configure --prefix=/othersoft/local/kde
+ make install 
+ history | grep expo
+ cd ..
+ cd kate-4.13.3/
+ cd build/
+ cmake  -DCMAKE_INSTALL_PREFIX=/othersoft/local/kde -DCMAKE_BUILD_TYPE=Release   ../
